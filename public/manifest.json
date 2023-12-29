@@ -1,0 +1,15 @@
+{
+  "short_name": "Lucas Breno de Souza Noronha Braga",
+  "name": "Lucas Breno de Souza Noronha Braga - Portfolio",
+  "icons": [
+    {
+      "src": "images/logo.svg",
+      "type": "image/svg",
+      "sizes": "425x225"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

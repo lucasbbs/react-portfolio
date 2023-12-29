@@ -1,0 +1,70 @@
+body {
+  background-color: #1e1e2f !important;
+  margin: 0;
+  font-family: "Open Sans", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  color: #ffffff;
+  background: #149ddd;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a.navbar__link {
+  color: #a8a9b4;
+  transition: 0.3s;
+}
+a.navbar__link:nth-child(1):before {
+  content: '\f015  ';
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+a.navbar__link:nth-child(2):before {
+  content: '\f007  ';
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+a.navbar__link:nth-child(3):before {
+  content: '\f013  ';
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+a.navbar__link:nth-child(4):before {
+  content: '\f501  ';
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+a.navbar__link:nth-child(5):before {
+  content: '\f0f2  ';
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+a.navbar__link:nth-child(6):before {
+  content: '\f542  ';
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+a.navbar__link:nth-child(7):before {
+  content: '\f10d  ';
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+a.navbar__link:nth-child(8):before {
+  content: '\f0e0  ';
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+a.navbar__link:nth-child(9):before {
+  content: '\f15b  ';
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+a.navbar__link:hover::before, .navbar__link--active:before {
+  color: #149ddd;
+}

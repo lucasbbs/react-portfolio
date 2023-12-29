@@ -1,0 +1,24 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/lucas-breno-noronha-braga/"
+        },
+        {
+            "network" : "whatsapp",
+            "href": "https://wa.me/12267247739?text=Hello,+Lucas,"
+        },
+        {
+            "network" : "vk",
+            "href": "https://vk.com/lucasbbs"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/lucasbbs"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:lucasbbs@live.fr?subject=Hello,+%20+Lucas&body=Hello,+%20+there!%0D%0A"
+        }
+    ]
+}

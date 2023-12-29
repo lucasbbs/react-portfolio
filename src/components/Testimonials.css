@@ -1,0 +1,71 @@
+.rec-arrow-left:hover:enabled, .rec-arrow-left:focus:enabled, .rec-arrow-right:hover:enabled, .rec-arrow-right:focus:enabled {
+  color: rgb(255, 255, 255);
+  background-color: #3d84c6;
+}
+
+.rec-arrow-left, .rec-arrow-right {
+  background-color: #3d84c61a;
+}
+
+.testimonial-item {
+  margin: 5px;
+
+}
+
+.fade-in {
+  opacity: 0;
+  transition-property: opacity,transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+}
+
+.testimonial {
+  border-radius: 15px;
+  margin: 0;
+  position: relative;
+  height: fit-content;
+  align-self: center;
+  background-color: #ddd !important;
+  color: #333;
+  padding: 20px 25px;
+  margin: 0 5px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid #ddd;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 25px);
+}
+
+.rec-swipable {
+  align-items: end;
+}
+
+.aos-animate {
+  opacity: 1 !important;
+  transform: translateZ(0);
+}
+
+.top {
+  font-size: 26px;
+  color: #3d84c6;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.bottom {
+  font-size: 26px;
+  color: #3d84c6;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}

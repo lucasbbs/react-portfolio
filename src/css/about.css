@@ -1,0 +1,24 @@
+.list-group-item:before {
+  content: '\f054  ';
+  font: normal normal normal 14px/1 FontAwesome;
+  color: #149ddd;
+}
+
+ul.text-start {
+  line-height: 2.5;
+  font-size: 1rem;
+  list-style: none;
+}
+
+a.about-link {
+  text-decoration: none;
+  color: #149ddd;
+}
+
+a.about-link:hover {
+  color: #0a58ca;
+}
+
+img.avatar {
+  border-radius: 50%;
+}

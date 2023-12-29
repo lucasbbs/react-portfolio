@@ -1,0 +1,9 @@
+.card-code-header {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  cursor: pointer;
+}
+
