@@ -7,6 +7,7 @@ import endpoints from '../constants/endpoints';
 import Logo from './Logo';
 import h1Styles from './project.module.css';
 import { useLanguageContext } from '../TranslateContext';
+/* eslint-disable import/no-cycle */
 import LanguageSelector from './LanguageSelector';
 
 const styles = {
@@ -118,7 +119,7 @@ const NavBar = () => {
                 </InternalNavLink>
               )))}
               <LanguageSelector
-                available={['en', 'ru'/*, 'fr', 'pt'*/]}
+                available={['en', 'ru'/* , 'fr', 'pt' */]}
                 onChangeEnd={(value) => onClickLanguageChange(value)}
               />
             </Nav>

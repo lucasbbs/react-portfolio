@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import FallbackSpinner from './components/FallbackSpinner';
+/* eslint-disable import/no-cycle */
 import NavBarWithRouter from './components/NavBar';
 import Home from './components/Home';
 // import Page404 from './components/Page404';
@@ -8,7 +9,7 @@ import endpoints from './constants/endpoints';
 import Project from './components/Project';
 import Projects from './components/Projects';
 
-export const initialLanguage = 'en'
+export const initialLanguage = 'en';
 
 function MainApp() {
   const [data, setData] = useState(null);

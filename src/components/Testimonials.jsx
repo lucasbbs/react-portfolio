@@ -1,7 +1,6 @@
 /* eslint-disable comma-dangle */
 import React, { useEffect, useRef, useState } from 'react';
 import Carousel from 'react-elastic-carousel';
-import { PropTypes } from 'prop-types';
 import { Helmet } from 'react-helmet';
 import Item, { Flex, Square } from './Item';
 import endpoints from '../constants/endpoints';
@@ -25,8 +24,7 @@ const InitialItems = (data) => data.map((d) => (
   </div>
 ));
 
-const Testimonials = (props) => {
-  const { header } = props;
+const Testimonials = () => {
   const [data, setData] = useState();
   const [testimonials, setTestimonials] = useState();
   const [items, setItems] = useState();
@@ -91,7 +89,7 @@ const Testimonials = (props) => {
     <>
       <Helmet>
         <title>
-          {t('testimonials.title') + ' | ' + t('home.name')}  
+          {t('testimonials.title') + ' | ' + t('home.name')}
         </title>
       </Helmet>
       <h1
@@ -145,10 +143,6 @@ const Testimonials = (props) => {
       </div>
     </>
   );
-};
-
-Testimonials.propTypes = {
-  header: PropTypes.string.isRequired,
 };
 
 export default Testimonials;
