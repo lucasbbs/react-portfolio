@@ -37,8 +37,6 @@ function Home() {
 
   const { t, i18n } = useLanguageContext();
 
-  console.log(i18n);
-
   return data ? (
     <Fade>
       <Helmet>
