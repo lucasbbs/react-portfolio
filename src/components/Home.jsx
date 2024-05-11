@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import endpoints from '../constants/endpoints';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
+import { useLanguageContext } from '../TranslateContext';
 
 const styles = {
   nameStyle: {
@@ -34,21 +35,30 @@ function Home() {
       .catch((err) => err);
   }, []);
 
+  const { t, i18n } = useLanguageContext();
+
+  console.log(i18n);
+
   return data ? (
     <Fade>
       <Helmet>
-        <title>Home | Lucas&apos; Portfolio</title>
+        <title>
+          {t('home.title') + ' | ' + t('home.name')}
+        </title>
       </Helmet>
       <div style={styles.mainContainer}>
-        <h1 style={styles.nameStyle}>{data?.name}</h1>
+        <h1 style={styles.nameStyle}>{t('home.name')}</h1>
         <div style={{ flexDirection: 'row' }}>
-          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
+          <h2 style={styles.inlineChild}>
+            {t('home.heading')}
+            &nbsp;
+          </h2>
           <Typewriter
             wrapperClassName="h2"
             options={{
               loop: true,
               autoStart: true,
-              strings: data?.roles,
+              strings: data?.roles[i18n.language],
             }}
           />
         </div>

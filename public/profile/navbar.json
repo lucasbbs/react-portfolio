@@ -4,35 +4,66 @@
         "height" : 45,
         "width" : 45
     },
-    "sections": [
+    "sections": {
+        "en": [
+            {
+                "title": "Home",
+                "href": "/"
+            },
+            {
+                "title": "About",
+                "href": "/about"
+            },
+            {
+                "title": "Skills",
+                "href": "/skills"
+            },
+            {
+                "title": "Education",
+                "href": "/education"
+            },
+            {
+                "title": "Experience",
+                "href": "/experience"
+            },
+            {
+                "title": "Projects",
+                "href": "/projects"
+            },
+            {
+                "title": "Testimonials",
+                "href": "/testimonials"
+            }
+        ],
+        "ru": [
         {
-            "title": "Home",
+            "title": "Дом",
             "href": "/"
         },
         {
-            "title": "About",
+            "title": "Обо",
             "href": "/about"
         },
         {
-            "title": "Skills",
+            "title": "Навыки",
             "href": "/skills"
         },
         {
-            "title": "Education",
+            "title": "Образование",
             "href": "/education"
         },
         {
-            "title": "Experience",
+            "title": "Опыт",
             "href": "/experience"
         },
         {
-            "title": "Projects",
+            "title": "Проекты",
             "href": "/projects"
         },
         {
-            "title": "Testimonials",
+            "title": "Отзывы",
             "href": "/testimonials"
         }
-    ]
+    ]}
 
 }

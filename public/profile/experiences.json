@@ -1,57 +1,114 @@
 {
-    "experiences": [
-        {
-            "title": "Full Stack Cloud Engineer",
-            "subtitle": "Goco",
-            "workType": "Full-time",
-            "workDescription": [
-                "Responsibilities:",
-                "Develop, test, and deploy scalable cloud-based applications and services for a range of startup clients, using a variety of technologies and frameworks, including ReactJS, NodeJS, TypeScript, Material UI, Serverless Framework, AWS, NextJS, and NestJS",
-                "Collaborate closely with cross-functional teams and clients to understand their needs and deliver high-quality solutions that meet or exceed their expectations",
-                "Contribute to all aspects of the software development life cycle, from requirements gathering and design to implementation, testing, and deployment",
-                "Participate in code reviews, knowledge sharing, and continuous learning to stay up-to-date with emerging trends and technologies in cloud development and startup culture",
-                "Startups I have worked with:",
-                "Geekster.dk: I worked with React, Typescript, Material UI in the frontend, and NodeJS, Serverless Framework, AWS in the backend",
-                "Husjournalen.com: Worked on deployment to production and domain setup, deepening my experience in React, Typescript, Material UI, NodeJS, Serverless Framework, and AWS",
-                "Adept Time: I was involved since the beginning, working with new concepts like Mobile-First and Domain-driven design, as well as technologies such as NextJS and NestJS."
-            ],
-            "dateText": "09/2022 – Present"
-        },
-        {
-            "title": "Software Developer",
-            "subtitle": "I-dataBI | Software & Metrologia & Macrografia & Calibração & MSA",
-            "workType": "Part-time",
-            "workDescription": [
-                "As a Software Developer at I-dataBI, I had the opportunity to work with a variety of technologies, but my primary focus was on developing software solutions using the PHP programming language, the Laravel framework, and the MySQL database.",
-                "Working with PHP allowed me to build dynamic and robust web applications that were fast and efficient. The Laravel framework, with its elegant syntax and powerful features, enabled me to develop software solutions quickly and easily. Furthermore, by using the MySQL database, I was able to create reliable and scalable data-driven applications that met the needs of the companies we were working with.",
-                "Over the course of my time at I-dataBI, I gained deep expertise in the PHP language, the Laravel framework, and the MySQL database, allowing me to design, build, and deploy complex software solutions with confidence. By leveraging these technologies, I was able to create software that was both powerful and user-friendly, that met the high standards of performance and quality that are required in the metrology industry.",
-                "In short, my experience with the PHP language, the Laravel framework, and the MySQL database was essential to my success as a Software Developer at I-dataBI, and I am confident that these skills will continue to serve me well in my future endeavors."
-            ],
-            "dateText": "09/2019 – 09/2022"
-        },
-        {
-            "title": "Financial Consultant",
-            "subtitle": "Escola Superior do Ministério Público da União",
-            "workType": "Full-time",
-            "workDescription": [
-                "My previous role as a Financial Consultant has greatly contributed to my current career as a software developer. Firstly, my experience has honed my analytical skills, enabling me to interpret complex tax regulations and financial data. This analytical mindset translates well into software development, where I can troubleshoot code, identify performance issues, and optimize solutions.",
-                "Secondly, my attention to detail, crucial in tax compliance, serves me in software development. I strive for precision in writing clean code, conducting thorough testing, and ensuring accurate data processing.",
-                "Moreover, my problem-solving abilities, developed through tackling tax-related challenges, empower me to find innovative solutions in software development. I can address complex technical issues, optimize processes, and deliver efficient solutions.",
-                "Additionally, my understanding of compliance and regulation, vital in tax consulting, benefits software development. I can develop solutions that adhere to industry standards, data privacy laws, and security regulations.",
-                "Furthermore, my client-focused approach from working directly with clients in tax consulting is valuable in software development. I understand client needs, collaborate closely with stakeholders, and deliver software solutions that meet expectations.",
-                "Lastly, my communication and presentation skills, refined through explaining complex tax concepts, facilitate effective communication in software development. I can communicate clearly with team members, clients, and end-users.",
-                "Leveraging my experience as a Financial Consultant, I bring a unique perspective to software development. My analytical thinking, attention to detail, problem-solving abilities, compliance knowledge, client-focused approach, and strong communication skills enable me to deliver high-quality software solutions that meet technical and business requirements. I ensure compliance with regulations and effectively address client needs."
-            ],
-            "dateText": "06/2016 – 08/2019"
-        },
-        {
-            "title": "General Contractor",
-            "subtitle": "Procuradoria Geral da República",
-            "workType": "Full-time",
-            "workDescription": [
-                "I worked as a specialist in contracting services for the Brazilian Prosecutor's Office."
-            ],
-            "dateText": "09/2014 – 05/2016"
-        }
-    ]
+    "experiences": {
+        "en": [
+            {
+                "title": "Full Stack Cloud Engineer",
+                "subtitle": "Goco",
+                "workType": "Full-time",
+                "workDescription": [
+                    "Responsibilities:",
+                    "Develop, test, and deploy scalable cloud-based applications and services for a range of startup clients, using a variety of technologies and frameworks, including ReactJS, NodeJS, TypeScript, Material UI, Serverless Framework, AWS, NextJS, and NestJS",
+                    "Collaborate closely with cross-functional teams and clients to understand their needs and deliver high-quality solutions that meet or exceed their expectations",
+                    "Contribute to all aspects of the software development life cycle, from requirements gathering and design to implementation, testing, and deployment",
+                    "Participate in code reviews, knowledge sharing, and continuous learning to stay up-to-date with emerging trends and technologies in cloud development and startup culture",
+                    "Startups I have worked with:",
+                    "Geekster.dk: I worked with React, Typescript, Material UI in the frontend, and NodeJS, Serverless Framework, AWS in the backend",
+                    "Husjournalen.com: Worked on deployment to production and domain setup, deepening my experience in React, Typescript, Material UI, NodeJS, Serverless Framework, and AWS",
+                    "Adept Time: I was involved since the beginning, working with new concepts like Mobile-First and Domain-driven design, as well as technologies such as NextJS and NestJS."
+                ],
+                "dateText": "09/2022 – Present"
+            },
+            {
+                "title": "Software Developer",
+                "subtitle": "I-dataBI | Software & Metrologia & Macrografia & Calibração & MSA",
+                "workType": "Part-time",
+                "workDescription": [
+                    "As a Software Developer at I-dataBI, I had the opportunity to work with a variety of technologies, but my primary focus was on developing software solutions using the PHP programming language, the Laravel framework, and the MySQL database.",
+                    "Working with PHP allowed me to build dynamic and robust web applications that were fast and efficient. The Laravel framework, with its elegant syntax and powerful features, enabled me to develop software solutions quickly and easily. Furthermore, by using the MySQL database, I was able to create reliable and scalable data-driven applications that met the needs of the companies we were working with.",
+                    "Over the course of my time at I-dataBI, I gained deep expertise in the PHP language, the Laravel framework, and the MySQL database, allowing me to design, build, and deploy complex software solutions with confidence. By leveraging these technologies, I was able to create software that was both powerful and user-friendly, that met the high standards of performance and quality that are required in the metrology industry.",
+                    "In short, my experience with the PHP language, the Laravel framework, and the MySQL database was essential to my success as a Software Developer at I-dataBI, and I am confident that these skills will continue to serve me well in my future endeavors."
+                ],
+                "dateText": "09/2019 – 09/2022"
+            },
+            {
+                "title": "Financial Consultant",
+                "subtitle": "Escola Superior do Ministério Público da União",
+                "workType": "Full-time",
+                "workDescription": [
+                    "My previous role as a Financial Consultant has greatly contributed to my current career as a software developer. Firstly, my experience has honed my analytical skills, enabling me to interpret complex tax regulations and financial data. This analytical mindset translates well into software development, where I can troubleshoot code, identify performance issues, and optimize solutions.",
+                    "Secondly, my attention to detail, crucial in tax compliance, serves me in software development. I strive for precision in writing clean code, conducting thorough testing, and ensuring accurate data processing.",
+                    "Moreover, my problem-solving abilities, developed through tackling tax-related challenges, empower me to find innovative solutions in software development. I can address complex technical issues, optimize processes, and deliver efficient solutions.",
+                    "Additionally, my understanding of compliance and regulation, vital in tax consulting, benefits software development. I can develop solutions that adhere to industry standards, data privacy laws, and security regulations.",
+                    "Furthermore, my client-focused approach from working directly with clients in tax consulting is valuable in software development. I understand client needs, collaborate closely with stakeholders, and deliver software solutions that meet expectations.",
+                    "Lastly, my communication and presentation skills, refined through explaining complex tax concepts, facilitate effective communication in software development. I can communicate clearly with team members, clients, and end-users.",
+                    "Leveraging my experience as a Financial Consultant, I bring a unique perspective to software development. My analytical thinking, attention to detail, problem-solving abilities, compliance knowledge, client-focused approach, and strong communication skills enable me to deliver high-quality software solutions that meet technical and business requirements. I ensure compliance with regulations and effectively address client needs."
+                ],
+                "dateText": "06/2016 – 08/2019"
+            },
+            {
+                "title": "General Contractor",
+                "subtitle": "Procuradoria Geral da República",
+                "workType": "Full-time",
+                "workDescription": [
+                    "I worked as a specialist in contracting services for the Brazilian Prosecutor's Office."
+                ],
+                "dateText": "09/2014 – 05/2016"
+            }
+        ],
+        "ru": [
+            {
+                "title": "Облачный инженер полного цикла",
+                "subTitle": "Goco",
+                "workType": "Полный рабочий день",
+                "workDescription": [
+                    "Обязанности:",
+                    "Разработка, тестирование и развертывание масштабируемых облачных приложений и сервисов для ряда начинающих клиентов, с использованием различных технологий и фреймворков, включая ReactJS, NodeJS, TypeScript, Material UI, бессерверный фреймворк, AWS, NextJS и NestJS",
+                    "Тесно сотрудничать с межфункциональными командами и клиентами, чтобы понимать их потребности и предоставлять высококачественные решения, которые соответствуют или превосходят их ожидания",
+                    "Вносить вклад во все аспекты жизненного цикла разработки программного обеспечения, от сбора требований и проектирования до внедрения, тестирования и развертывания",
+                    "Участвовать в обзорах кода, обмен знаниями и постоянное обучение, чтобы быть в курсе новых тенденций и технологий в облачной разработке и культуре стартапов",
+                    "Стартапы, с которыми я работал:",
+                    "Geekster.dk: Я работал с React, Typescript, Material UI во внешнем интерфейсе и NodeJS, бессерверной платформой, AWS во внутреннем",
+                    "Husjournalen.com : Работал над развертыванием в рабочей среде и настройкой домена, углубляя свой опыт в React, Typescript, Material UI, NodeJS, бессерверной платформе и AWS.",
+                    "Время адепта: я был вовлечен с самого начала, работая с новыми концепциями, такими как дизайн, ориентированный на мобильные устройства, и дизайн, ориентированный на предметную область, а также с такими технологиями, как NextJS и NestJS"
+                ],
+                "dateText": "09/2022 – настоящее время"
+            },
+            {
+                "title": "Разработчик программного обеспечения",
+                "subTitle": "I-dataBI | Программное обеспечение, метрология, макрография, Калибрация и MSA",
+                "workType": "Неполный рабочий день",
+                "workDescription": [
+                    "Как разработчик программного обеспечения в I-dataBI, у меня была возможность работать я работал с различными технологиями, но основное внимание уделял разработке программных решений с использованием языка программирования PHP, фреймворка Laravel и базы данных MySQL",
+                    "Работа с PHP позволила мне создавать динамичные и надежные веб-приложения, которые были быстрыми и эффективными. Платформа Laravel с ее элегантным синтаксисом и мощными функциями позволила мне быстро и просто разрабатывать программные решения. Кроме того, используя базу данных MySQL, я смог создавать надежные и масштабируемые приложения, управляемые данными, которые отвечали потребностям компаний, с которыми мы работали",
+                    "За время работы в I-dataBI я приобрел глубокие знания в области языка PHP, фреймворка Laravel и базы данных MySQL, что позволило мне уверенно проектировать, создавать и внедрять сложные программные решения. Используя эти технологии, я смог создать мощное и удобное в использовании программное обеспечение, отвечающее высоким стандартам производительности и качества, которые требуются в метрологической отрасли",
+                    "Короче говоря, мой опыт работы с языком PHP, фреймворком Laravel и базой данных MySQL был необходим для моего успеха в качестве разработчика программного обеспечения в I-dataBI, и я уверен, что эти навыки продолжат хорошо служить мне в моих будущих начинаниях"
+                ],
+                "dateText": "09/2019 – 09/2022"
+            },
+            {
+                "title": "Финансовый консультант",
+                "subTitle": "Высшая школа министерства общественных дел Союза",
+                "workType": "Полный рабочий день",
+                "workDescription": [
+                    "Моя предыдущая работа в качестве финансового консультанта во многом способствовала моей нынешней карьере разработчика программного обеспечения. Во-первых, мой опыт отточил мои аналитические способности, позволив мне интерпретировать сложные налоговые положения и финансовые данные. Этот аналитический склад ума хорошо подходит для разработки программного обеспечения, где я могу устранять неполадки в коде, выявлять проблемы с производительностью и оптимизировать решения",
+                    "Во-вторых, мое внимание к деталям, имеющее решающее значение для соблюдения налогового законодательства, помогает мне в разработке программного обеспечения. Я стремлюсь к точности при написании чистого кода, проведении тщательного тестирования и обеспечении точной обработки данных",
+                    "Более того, мои способности к решению проблем, развившиеся благодаря решению задач, связанных с налогообложением, позволяют мне находить инновационные решения в разработке программного обеспечения. Я могу решать сложные технические вопросы, оптимизировать процессы и предлагать эффективные решения",
+                    "Кроме того, мое понимание комплаенса и регулирования, жизненно важное для налогового консалтинга, приносит пользу разработке программного обеспечения. Я могу разрабатывать решения, соответствующие отраслевым стандартам, законам о конфиденциальности данных и правилам безопасности",
+                    "Кроме того, мой клиентоориентированный подход к работе непосредственно с клиентами в сфере налогового консалтинга ценен при разработке программного обеспечения. Я понимаю потребности клиентов, тесно сотрудничаю с заинтересованными сторонами и разрабатываю программные решения, которые соответствуют ожиданиям",
+                    "И наконец, мои навыки общения и презентации, усовершенствованные благодаря объяснению сложных налоговых концепций, способствуют эффективному взаимодействию при разработке программного обеспечения. Я могу четко общаться с членами команды, клиентами и конечными пользователями",
+                    "Используя свой опыт финансового консультанта, я привношу уникальный подход в разработку программного обеспечения. Мое аналитическое мышление, внимание к деталям, умение решать проблемы, знание нормативных требований, клиентоориентированный подход и сильные коммуникативные навыки позволяют мне создавать высококачественные программные решения, соответствующие техническим и бизнес-требованиям. Я обеспечиваю соблюдение нормативных требований и эффективно удовлетворяю потребности клиентов"
+                ],
+                "dateText": "06/2016 – 08/2019"
+            },
+            {
+                "title": "Генеральный подрядчик",
+                "subTitle": "Генеральная прокуратура Республики",
+                "workType": "Полный рабочий день",
+                "workDescription": [
+                    "Я работал специалистом по контрактным услугам в прокуратуре Бразилии"
+                ],
+                "dateText": "09/2014 – 05/2016"
+            }
+        ]
+    }
 }

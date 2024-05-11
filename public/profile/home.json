@@ -1,4 +1,6 @@
 {
-    "name": "Lucas' Portfolio",
-    "roles": ["a Software Engineer", "a Mern Cloud Developer"]
+    "roles": {
+        "en": ["a Software Engineer", "a Mern Cloud Developer"],
+        "ru": ["инженер-программист", "облачный разработчик в стеке MERN"]
+    }
 }

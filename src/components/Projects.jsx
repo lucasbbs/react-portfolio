@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
 import axios from 'axios';
 import qs from 'query-string';
@@ -12,6 +11,7 @@ import FallbackSpinner from './FallbackSpinner';
 import '../App.css';
 import ScrollButton from './ScrollTopButton';
 import Pagination from './Pagination';
+import { useLanguageContext } from '../TranslateContext';
 
 const styles = {
   containerStyle: {
@@ -22,13 +22,11 @@ const styles = {
   },
 };
 
-const Projects = (props) => {
+const Projects = () => {
   const [repositories, setRepositories] = useState([]);
   const [devicons, setDevicons] = useState({});
   const [urls, setUrls] = useState({});
   const page = useSearchParams();
-
-  console.log(page);
 
   useEffect(() => {
     const fetchDevIconsInfo = async () => {
@@ -61,7 +59,9 @@ const Projects = (props) => {
   useEffect(() => {
     fetchGithubProjects();
   }, [page]);
-  const { header } = props;
+
+  const { t } = useLanguageContext();
+
   const numberOfItems = repositories.length;
 
   return (
@@ -71,7 +71,7 @@ const Projects = (props) => {
       </Helmet>
       <Header
         headerClassName="header"
-        title={header}
+        title={t('projects.title')}
       />
       <Pagination urls={urls} />
       {repositories
@@ -91,10 +91,6 @@ const Projects = (props) => {
       <ScrollButton />
     </>
   );
-};
-
-Projects.propTypes = {
-  header: PropTypes.string.isRequired,
 };
 
 export default Projects;

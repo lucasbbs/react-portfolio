@@ -1,35 +1,72 @@
 {
-    "education":[
-        {
-            "title": "2015 - 2016",
-            "cardTitle": "Master of Business Administration - MBA, Computer Software Engineering",
-            "cardSubtitle":"IGTI - Institute of Management in Information Technology, Belo Horizonte/MG, BR",
-            "cardDetailedText":[
-                "Javascript Architecture",
-                "Authentication and Authorization in Web Solutions",
-                "Advanced Javascript Development",
-                "API Development",
-                "Reactive Development",
-                "Fundamentals in Full Stack Development",
-                "Innovation and Design Thinking",
-                "Teaching Model and Academic Standards",
-                "Optimization of Software Distribution (Devops)",
-                "Persistence and Data Search",
-                "Applied Project"
+    "education": {
+        "en": [
+            {
+                "title": "2015 - 2016",
+                "cardTitle": "Master of Business Administration - MBA, Computer Software Engineering",
+                "cardSubtitle": "IGTI - Institute of Management in Information Technology, Belo Horizonte/MG, BR",
+                "cardDetailedText": [
+                    "Javascript Architecture",
+                    "Authentication and Authorization in Web Solutions",
+                    "Advanced Javascript Development",
+                    "API Development",
+                    "Reactive Development",
+                    "Fundamentals in Full Stack Development",
+                    "Innovation and Design Thinking",
+                    "Teaching Model and Academic Standards",
+                    "Optimization of Software Distribution (Devops)",
+                    "Persistence and Data Search",
+                    "Applied Project"
+                ]
+            },
+            {
+                "title": "2009 - 2013",
+                "cardTitle": "Bachelor of Science in Accounting",
+                "cardSubtitle": "University of Brasília, Brasília/DF, BR",
+                "cardDetailedText": [
+                    "My bachelor's degree in Accounting brings several important assets to my career:",
+                    "1. Analytical Skills: Apply problem-solving and troubleshooting abilities to code and system architecture.",
+                    "2. Attention to Detail: Ensure precise, error-free code and conduct thorough testing and debugging.",
+                    "3. Financial and Business Understanding: I gained expertise in financial software, transactions, and analysis.",
+                    "4. Compliance and Regulation: Implement secure coding practices and adhere to industry standards and data privacy laws.",
+                    "5. Communication and Collaboration: Facilitate effective teamwork, client understanding, and non-technical stakeholder communication.",
+                    "6. Problem-solving Abilities: Apply complex problem-solving skills to optimize processes and find innovative solutions in development."
+                ]
+            }
+        ],
+        "ru": [
+            {
+                "title": "2015 - 2016",
+                "cardTitle": "Магистр делового администрирования, Полноценная разработка",
+                "cardSubtitle": "Институт менеджмента информационных технологий, г.Белу-Оризонти, Бразилия",
+                "cardDetailedText": [
+                    "Архитектура Javascript",
+                    "Аутентификация и авторизация в веб-решениях",
+                    "Продвинутая разработка Javascript",
+                    "API-разработка",
+                    "Реактивное развитие",
+                    "Основы Full Stack разработки",
+                    "Инновации и дизайн-мышление",
+                    "Модель преподавания и академические стандарты",
+                    "Оптимизация распространения программного обеспечения (Devops)",
+                    "Постоянство и поиск данных",
+                    "Прикладной проект"
+                ]
+            },
+            {
+                "title": "2009 - 2013",
+                "cardTitle": "Бакалавр бухгалтерского учёта",
+                "cardSubtitle": "Университет Бразилиа, г.Бразилиа, Бразилия",
+                "cardDetailedText": [
+                    "Моя степень бакалавра в области бухгалтерского учета привносит в мою карьеру несколько важных преимуществ:",
+                    "1. Аналитические способности: Применяю навыки решения проблем и устранения неполадок в коде и системной архитектуре.",
+                    "2. Внимание к деталям: Обеспечиваю точность и безошибочность кода и провожу тщательное тестирование и отладку.",
+                    "3. Понимание финансов и бизнеса: Я приобрел опыт работы с финансовым программным обеспечением, транзакциями, и анализ.",
+                    "4. Соответствие требованиям и регулирование: Внедряйте методы безопасного кодирования и придерживайтесь отраслевых стандартов и законов о конфиденциальности данных",
+                    "5. Коммуникация и сотрудничество: способствуют эффективной командной работе, пониманию клиентов и нетехническому общению с заинтересованными сторонами",
+                    "6. Умение решать проблемы: Применяйте сложные навыки решения проблем для оптимизации процессов и поиска инновационных решений в процессе разработки"
+                ]
+            }
         ]
-        },
-        {
-            "title": "2009 - 2013",
-            "cardTitle": "Bachelor of Science in Accounting",
-            "cardSubtitle":"University of Brasília, Brasília/DF, BR",
-            "cardDetailedText": ["My bachelor's degree in Accounting brings several important assets to my career:",
-            "1. Analytical Skills: Apply problem-solving and troubleshooting abilities to code and system architecture.",
-            "2. Attention to Detail: Ensure precise, error-free code and conduct thorough testing and debugging.",
-            "3. Financial and Business Understanding: I gained expertise in financial software, transactions, and analysis.",
-            "4. Compliance and Regulation: Implement secure coding practices and adhere to industry standards and data privacy laws.",
-            "5. Communication and Collaboration: Facilitate effective teamwork, client understanding, and non-technical stakeholder communication.",
-            "6. Problem-solving Abilities: Apply complex problem-solving skills to optimize processes and find innovative solutions in development."
-    ]
-        }
-    ]
+    }
 }

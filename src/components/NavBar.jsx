@@ -6,6 +6,8 @@ import styled, { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
 import Logo from './Logo';
 import h1Styles from './project.module.css';
+import { useLanguageContext } from '../TranslateContext';
+import LanguageSelector from './LanguageSelector';
 
 const styles = {
   buttonStyle: {
@@ -66,6 +68,8 @@ const NavBar = () => {
       .catch((err) => err);
   }, [pathname]);
 
+  const { i18n, onClickLanguageChange } = useLanguageContext();
+
   return (
     <Navbar
       fixed="top"
@@ -88,7 +92,7 @@ const NavBar = () => {
             <Nav className="me-auto" />
             <Nav>
               {data
-              && data.sections?.map((section, index) => (section?.type === 'link' ? (
+              && data.sections[i18n.language]?.map((section, index) => (section?.type === 'link' ? (
                 <ExternalNavLink
                   key={section.title}
                   href={section.href}
@@ -113,10 +117,11 @@ const NavBar = () => {
                   {section.title}
                 </InternalNavLink>
               )))}
+              <LanguageSelector
+                available={['en', 'ru'/*, 'fr', 'pt'*/]}
+                onChangeEnd={(value) => onClickLanguageChange(value)}
+              />
             </Nav>
-            {/* <ThemeToggler
-              onClick={() => setExpanded(false)}
-            /> */}
           </Navbar.Collapse>
         </Container>
       )

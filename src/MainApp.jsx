@@ -8,6 +8,8 @@ import endpoints from './constants/endpoints';
 import Project from './components/Project';
 import Projects from './components/Projects';
 
+export const initialLanguage = 'en'
+
 function MainApp() {
   const [data, setData] = useState(null);
 
@@ -32,7 +34,7 @@ function MainApp() {
                 exact
                 path="/projects"
               >
-                <Projects header="Projects" />
+                <Projects />
               </Route>
               <Route
                 path="/projects/:id"

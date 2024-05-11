@@ -1,9 +1,9 @@
+/* eslint-disable no-confusing-arrow, arrow-parens */
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import {
   Container, Col, Row,
 } from 'react-bootstrap';
-import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
@@ -11,6 +11,7 @@ import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/about.css';
+import { useLanguageContext } from '../TranslateContext';
 
 const styles = {
   introTextContainer: {
@@ -46,9 +47,13 @@ const Div = styled.div`
   transition-duration: 1s;
 `;
 
-function About(props) {
+const Ul = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+`;
+
+function About() {
   const [animated, setAnimated] = useState(false);
-  const { header } = props;
   const [data, setData] = useState(null);
 
   const parseIntro = (text) => (
@@ -73,107 +78,53 @@ function About(props) {
       .catch((err) => err);
   }, []);
 
+  const { t } = useLanguageContext();
+
   return (
     <>
       <Helmet>
         <title>
-          About | Lucas&apos; portfolio
+          {t('about.title') + ' | ' + t('home.name')}
         </title>
       </Helmet>
       <Header
         headerClassName="header"
-        title={header}
+        title={t('about.title')}
       />
       <div className="section-content-container">
         <Container>
           {data
             ? (
               <Fade>
-                <Row>{parseIntro(data.about)}</Row>
+                <Row>{parseIntro(t('about.info'))}</Row>
                 <Row>
                   <Col className="no-padding no-margin" xs={12} lg={4} style={styles.introImageContainer}>
                     <Image animated={animated} className="avatar" src={data?.imageSource} alt="profile" />
                   </Col>
                   <Col xs={12} lg={7} style={styles.introTextContainer}>
                     <Div animated={animated} style={{ width: '100%', display: 'flex', flexDirection: 'row' }}>
-                      <ul className="text-start">
-                        <li className="list-group-item">
-                          <strong>Name:</strong>
-                          {' '}
-                          Lucas Breno de Souza Noronha Braga
-                        </li>
-                        <li className="list-group-item">
-                          <strong>Birthday:</strong>
-                          {' '}
-                          <a className="about-link" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHAya21zY3ZzcjlyZXY1ODA5ZG1vYWxmOGUgYWMxMzJjMDE2OTg0YWRiOGQ5ZTExOGE5NmRjODJmNjc4M2IwOGI4MzA5ZGFmMDYzMTMxNjA0OGI0NTBmMzgyMUBn&tmsrc=ac132c016984adb8d9e118a96dc82f6783b08b8309daf0631316048b450f3821%40group.calendar.google.com">
-                            November 7th, 1990
-                          </a>
-                        </li>
-                        <li className="list-group-item">
-                          <strong>Website:</strong>
-                          {' '}
-                          <a className="about-link" href="https://lucasbbs.live">
-                            lucasbbs.live
-                          </a>
-                        </li>
-                        <li className="list-group-item">
-                          <strong>
-                            Phone:
-                          </strong>
-                          {' '}
-                          <a className="about-link" href="tel:+12267247739">
-                            +1 (226) 274 7739
-                          </a>
-                        </li>
-                        <li className="list-group-item">
-                          <strong>
-                            City:
-                          </strong>
-                          {' '}
-                          <a className="about-link" href="https://maps.google.com/maps?daddr=Windsor,%20Canada" target="__blank">
-                            Windsor/ON, CAN
-                          </a>
-                        </li>
-                      </ul>
-                      <ul className="text-start">
-                        <li className="list-group-item">
-                          <strong>
-                            Specialty:
-                          </strong>
-                          {' '}
-                          Cloud Full-Stack Development
-                        </li>
-                        <li className="list-group-item">
-                          <strong>
-                            Age:
-                          </strong>
-                          {' '}
-                          33
-                        </li>
-                        <li className="list-group-item">
-                          <strong>
-                            Degree:
-                          </strong>
-                          {' '}
-                          Master
-                        </li>
-                        <li className="list-group-item">
-                          <strong>
-                            email:
-                          </strong>
-                          {' '}
-                          <a className="about-link" href="mailto:lucasbbs@live.fr?subject=Hello,%20Lucas&body=Hello,%20there!%0D%0A" target="_blank" rel="noreferrer">
-                            lucasbbs@live.fr
-                          </a>
-                        </li>
-                        <li className="list-group-item">
-                          <strong>
-                            Freelance:
-                          </strong>
-                          {' '}
-                          Available
-                        </li>
-                      </ul>
+                      <Ul className="text-start two-columns-list">
+                        {t('about.data', { returnObjects: true }).map(d => d.link
+                          ? (
+                            <li className="list-group-item">
+                              <strong>
+                                {d.key + ':'}
+                              </strong>
+                              {' '}
+                              <a className="about-link" target="_blank" rel="noreferrer" href={d.address}>
+                                {d.value}
+                              </a>
+                            </li>
+                          )
+                          : (
+                            <li className="list-group-item">
+                              <strong>
+                                {d.key + ':'}
+                              </strong>
+                              {' ' + d.value}
+                            </li>
+                          ))}
+                      </Ul>
                     </Div>
                   </Col>
                 </Row>
@@ -185,9 +136,5 @@ function About(props) {
     </>
   );
 }
-
-About.propTypes = {
-  header: PropTypes.string.isRequired,
-};
 
 export default About;

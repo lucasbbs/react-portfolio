@@ -2,28 +2,23 @@
     "sections": [
         {
             "component": "About",
-            "path": "/about/",
-            "headerTitle": "About"
+            "path": "/about/"
         },
         {
             "component": "Skills",
-            "path": "/skills/",
-            "headerTitle": "Skills"
+            "path": "/skills/"
         },
         {
             "component": "Education",
-            "path": "/education/",
-            "headerTitle": "Education"
+            "path": "/education/"
         },
         {
             "component": "Testimonials",
-            "path": "/testimonials",
-            "headerTitle":  "Testimonials"
+            "path": "/testimonials"
         },
         {
             "component": "Experience",
-            "path": "/experience/",
-            "headerTitle": "Experience"
+            "path": "/experience/"
         }
     ]
 }

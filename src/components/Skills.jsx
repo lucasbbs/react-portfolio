@@ -11,6 +11,7 @@ import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/skill.css';
+import { useLanguageContext } from '../TranslateContext';
 
 // const styles = {
 //   iconStyle: {
@@ -50,18 +51,11 @@ const ProgressBarContainer = styled.div`
     transform: ${(prop) => (prop.addClass ? 'translateZ(0)' : 'translate3d(0, 100px, 0)')};
   `;
 
-function Skills(props) {
+function Skills() {
   const [addClass1, setAddClass1] = useState(false);
   const [addClass2, setAddClass2] = useState(false);
 
-  const { header } = props;
   const [data, setData] = useState(null);
-
-  // const renderSkillsIntro = (intro) => (
-  //   <h4 style={styles.introTextContainer}>
-  //     <ReactMarkdown children={intro} />
-  //   </h4>
-  // );
 
   useEffect(() => {
     fetch(endpoints.skills, {
@@ -76,28 +70,29 @@ function Skills(props) {
     const timeoutId1 = setTimeout(() => {
       setAddClass1(true);
     }, 100);
-    // Use setTimeout to add the class after a certain delay (e.g., 1000 milliseconds or 1 second)
+
     const timeoutId2 = setTimeout(() => {
       setAddClass2(true);
-    }, 200); // Adjust the delay as needed
+    }, 200);
 
-    // Cleanup the timeout to avoid memory leaks
     return () => {
       clearTimeout(timeoutId2);
       clearTimeout(timeoutId1);
     };
-  }, []); // Empty d
+  }, []);
+
+  const { t } = useLanguageContext();
 
   return (
     <>
       <Helmet>
         <title>
-          Skills | Lucas&apos; portfolio
+          {t('skills.title') + ' | ' + t('home.name')}
         </title>
       </Helmet>
       <Header
         headerClassName="header"
-        title={header}
+        title={t('skills.title')}
       />
       {data ? (
 
@@ -131,9 +126,5 @@ function Skills(props) {
     </>
   );
 }
-
-Skills.propTypes = {
-  header: PropTypes.string.isRequired,
-};
 
 export default Skills;

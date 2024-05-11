@@ -1,0 +1,139 @@
+.picker {
+  position: relative;
+  width: 45px;
+  height: 30px;
+  /* Not Active */
+  /* Active */
+}
+
+.picker .current {
+  position: relative;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+  filter: grayscale(80%);
+}
+
+.picker .language {
+  position: absolute;
+  width: 45px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.picker .language img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.picker .selector {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.picker .selector .container {
+  width: 0;
+  height: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  pointer-events: all;
+}
+
+.picker[data-direction="down"] .selector {
+  flex-direction: column;
+  top: 0;
+}
+
+.picker[data-direction="up"] .selector {
+  flex-direction: column-reverse;
+  bottom: 20px;
+}
+
+.picker[data-col-direction="left"] .selector {
+  flex-wrap: wrap-reverse;
+  right: 0;
+}
+
+.picker[data-col-direction="right"] .selector {
+  left: 0;
+}
+
+.picker[data-direction="left"] .selector {
+  flex-direction: row-reverse;
+  right: 0;
+}
+
+.picker[data-direction="right"] .selector {
+  flex-direction: row;
+  left: 0;
+}
+
+.picker[data-col-direction="down"] .selector {
+  top: 0;
+}
+
+.picker[data-col-direction="up"] .selector {
+  flex-wrap: wrap-reverse;
+  min-width: 30px;
+  bottom: 20px;
+}
+
+.picker:not([data-active="true"]) .selector {
+  width: 0 !important;
+  height: 0 !important;
+  right: 30px;
+}
+
+.picker[data-active="true"] .selector .container {
+  width: 30px;
+  height: 20px;
+}
+
+.picker[data-active="true"][data-direction="down"] .selector {
+  margin-top: 20px;
+}
+
+.picker[data-active="true"][data-direction="down"] .selector .container {
+  margin-top: 15px;
+}
+
+.picker[data-active="true"][data-direction="up"] .container {
+  margin-bottom: 10px;
+}
+
+.picker[data-active="true"][data-col-direction="left"] .container {
+  margin-left: 10px;
+}
+
+.picker[data-active="true"][data-col-direction="right"] .container {
+  margin-right: 10px;
+}
+
+.picker[data-active="true"][data-direction="right"] .selector {
+  margin-left: 30px;
+  bottom: 0;
+}
+
+.picker[data-active="true"][data-direction="right"] .selector .container {
+  margin-left: 10px;
+}
+
+.picker[data-active="true"][data-direction="left"] .selector {
+  margin-right: 30px;
+  bottom: 0;
+}
+
+.picker[data-active="true"][data-direction="left"] .selector .container {
+  margin-right: 10px;
+}

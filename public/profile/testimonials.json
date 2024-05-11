@@ -1,0 +1,48 @@
+{
+    "testimonials": {
+        "ru": [
+            {
+                "key": "tesminonial1",
+                "text": "Лукас - потрясающий человек, очень вежливый, трудолюбивый и внимательный к деталям. Всегда готовый учиться, поучать и усердно работать, он сочетает в себе несколько навыков, которые необходимы отличным профессионалам и компетентным командам! Я очень рад, что прошел его путь, а он - мой.",
+                "picture": "picture1.jpeg"
+            },
+            {
+                "key": "tesminonial2",
+                "text": "Мне выпала честь сотрудничать с Лукасом, и с самого начала я был поражен его непоколебимой приверженностью честности, трудолюбию и профессионализму. Его скрупулезный подход к обсуждению наших задач и потенциальных решений стал примером этих ценностей, что сделало его одним из тех людей, которые приносят большую пользу в области разработки программного обеспечения.",
+                "picture": "picture2.jpeg"
+            },
+            {
+                "key": "tesminonial3",
+                "text": "У меня был замечательный опыт работы с Лукасом. Он всегда готов помочь, поучиться и обеспечивает превосходное качество. Любой компании повезло бы иметь в своей команде такого профессионала, как Лукас.",
+                "picture": "picture3.jpeg"
+            },
+            {
+                "key": "tesminonial4",
+                "text": "Лукас - это новый уровень, когда дело доходит до обслуживания и исполнения. У него много креативных идей для моих проектов; www.geekster.dk и www.quizedu.dk и он никогда не боится мыслить новыми и новаторскими способами. Я еще не видел ничего, чего не смог бы создать Лукас, и последняя изюминка на торте: с ним очень приятно работать! С нетерпением жду возможности разработать с ним новый проект&lt;br&gt;:)",
+                "picture": "picture4.jpeg"
+            }
+        ],
+        "en": [
+            {
+                "key": "tesminonial1",
+                "text": "Lucas is a fantastic person, very polite, hardworking and attentive to details. Always willing to learn, teach and work hard, he combines several skills that a great professional and competent teams need! I'm very happy to have participated in his trajectory and he in mine.",
+                "picture": "picture1.jpeg"
+            },
+            {
+                "key": "tesminonial2",
+                "text": "I had the privilege of collaborating with Lucas, and right from the start, I was struck by his unwavering commitment to honesty, diligence, and professionalism. His meticulous approach to our discussions on tasks and potential solutions exemplified these values, making him one of the people that delivers enhanced value in the field of software development.",
+                "picture": "picture2.jpeg"
+            },
+            {
+                "key": "tesminonial3",
+                "text": "I had a wonderful experience working with Lucas. He's always ready to help, learn, and delivering excellent quality. Any company would be lucky to have a professional like Lucas on their team.",
+                "picture": "picture3.jpeg"
+            },
+            {
+                "key": "tesminonial4",
+                "text": "Lucas is next level when it comes to service and execution. He is has a lot of creative ideas for my projects; www.geekster.dk and www.quizedu.dk and he is never afraid of thinking in new and innovative ways. I have yet to see a thing that Lucas can't create and the last icing on the cake: he is a super nice guy to work with! Looking forward to develop a new project with him :)",
+                "picture": "picture4.jpeg"
+            }
+        ]
+    }
+}

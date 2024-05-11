@@ -2,7 +2,6 @@ import React, { useEffect, useState, useContext } from 'react';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import { Container } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
-import PropTypes from 'prop-types';
 import { ThemeContext } from 'styled-components';
 import Fade from 'react-reveal';
 import { Helmet } from 'react-helmet';
@@ -11,6 +10,7 @@ import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/experience.css';
 import ScrollButton from './ScrollTopButton';
+import { useLanguageContext } from '../TranslateContext';
 
 const styles = {
   ulStyle: {
@@ -32,28 +32,31 @@ const styles = {
   },
 };
 
-function Experience(props) {
+function Experience() {
   const theme = useContext(ThemeContext);
-  const { header } = props;
   const [data, setData] = useState(null);
+
+  const { t, i18n } = useLanguageContext();
 
   useEffect(() => {
     fetch(endpoints.experiences, {
       method: 'GET',
     })
       .then((res) => res.json())
-      .then((res) => setData(res.experiences))
+      .then((res) => setData(res.experiences[i18n.language]))
       .catch((err) => err);
-  }, []);
+  }, [i18n]);
 
   return (
     <>
       <Helmet>
-        <title>Experience | Lucas&apos; Portfolio</title>
+        <title>
+          {t('experience.title')}
+        </title>
       </Helmet>
       <Header
         headerClassName="header"
-        title={header}
+        title={t('experience.title')}
       />
 
       {data
@@ -113,9 +116,5 @@ function Experience(props) {
     </>
   );
 }
-
-Experience.propTypes = {
-  header: PropTypes.string.isRequired,
-};
 
 export default Experience;

@@ -1,0 +1,196 @@
+{
+    "menu": {
+        "option1": "Home",
+        "option2": "About",
+        "option3": "Skills",
+        "option4": "Education",
+        "option5": "Experience",
+        "option6": "Projects",
+        "option7": "Testimonials"
+    },
+    "home": {
+        "title": "Home",
+        "name": "Lucas' Portfolio",
+        "heading": "I'm"
+    },
+    "about": {
+        "title": "About",
+        "info": "As a Cloud Developer with a strong background in ReactJS,NodeJS, TypeScript, and AWS, I have developed a range of scalable, cloud-based applications and services for startups across a variety of industries. I am passionate about using technology to solve real-world problems and creating high-quality software that meets or exceeds the expectations of clients and end-users.",
+        "data": [
+            {
+                "key": "Name",
+                "value": "Lucas Breno de Souza Noronha Braga",
+                "link": false
+            },
+            {
+                "key": "Burthday",
+                "value": "November 7th, 1990",
+                "link": true,
+                "address": "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHAya21zY3ZzcjlyZXY1ODA5ZG1vYWxmOGUgYWMxMzJjMDE2OTg0YWRiOGQ5ZTExOGE5NmRjODJmNjc4M2IwOGI4MzA5ZGFmMDYzMTMxNjA0OGI0NTBmMzgyMUBn&tmsrc=ac132c016984adb8d9e118a96dc82f6783b08b8309daf0631316048b450f3821%40group.calendar.google.com"
+            },
+            {
+                "key": "Portfolio",
+                "value": "lucasbbs.live",
+                "link": true,
+                "address": "https://lucasbbs.live"
+            },
+            {
+                "key": "Phone",
+                "value": "+1 (226) 274 7739",
+                "link": true,
+                "address": "tel:+12267247739"
+            },
+            {
+                "key": "City",
+                "value": "Windsor, Ontario, CAN",
+                "link": true,
+                "address": "https://maps.google.com/maps?daddr=Windsor,%20Canada"
+            },
+            {
+                "key": "Specialty",
+                "value": "Full Stack CLoud Development",
+                "link": false
+            },
+            {
+                "key": "Age",
+                "value": 33,
+                "link": false
+            },
+            {
+                "key": "Degree",
+                "value": "Master",
+                "link": false
+            },
+            {
+                "key": "Email",
+                "value": "lucasbbs@live.fr",
+                "link": true,
+                "address": "mailto:lucasbbs@live.fr?subject=Hello,%20Lucas&body=Hello,%20there!%0D%0A"
+            },
+            {
+                "key": "Freelance",
+                "value": "Available",
+                "link": false
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "education": {
+        "title": "Education",
+        "timeline": [
+            {
+                "title": "2015 - 2016",
+                "cardTitle": "Master of Business Administration - MBA, Computer Software Engineering",
+                "cardSubtitle":"IGTI - Institute of Management in Information Technology, Belo Horizonte/MG, BR",
+                "cardDetailedText": [
+                    "Javascript Architecture",
+                    "Authentication and Authorization in Web Solutions",
+                    "Advanced Javascript Development",
+                    "API Development",
+                    "Reactive Development",
+                    "Fundamentals in Full Stack Development",
+                    "Innovation and Design Thinking",
+                    "Teaching Model and Academic Standards",
+                    "Optimization of Software Distribution (Devops)",
+                    "Persistence and Data Search",
+                    "Applied Project"
+            ]
+            },
+            {
+                "title": "2009 - 2013",
+                "cardTitle": "Bachelor of Science in Accounting",
+                "cardSubtitle":"University of Brasília, Brasília/DF, BR",
+                "cardDetailedText": ["My bachelor's degree in Accounting brings several important assets to my career:",
+                "1. Analytical Skills: Apply problem-solving and troubleshooting abilities to code and system architecture.",
+                "2. Attention to Detail: Ensure precise, error-free code and conduct thorough testing and debugging.",
+                "3. Financial and Business Understanding: I gained expertise in financial software, transactions, and analysis.",
+                "4. Compliance and Regulation: Implement secure coding practices and adhere to industry standards and data privacy laws.",
+                "5. Communication and Collaboration: Facilitate effective teamwork, client understanding, and non-technical stakeholder communication.",
+                "6. Problem-solving Abilities: Apply complex problem-solving skills to optimize processes and find innovative solutions in development."
+        ]
+            }
+        ]
+    },
+    "projects":{
+        "title": "Projects"
+    },
+    "experience": {
+        "title": "Experience",
+        "timeline": [
+            {
+                "title": "Full Stack Cloud Engineer",
+                "subtitle": "Goco",
+                "workType": "Full-time",
+                "workDescription": [
+                    "Responsibilities:",
+                    "Develop, test, and deploy scalable cloud-based applications and services for a range of startup clients, using a variety of technologies and frameworks, including ReactJS, NodeJS, TypeScript, Material UI, Serverless Framework, AWS, NextJS, and NestJS",
+                    "Collaborate closely with cross-functional teams and clients to understand their needs and deliver high-quality solutions that meet or exceed their expectations",
+                    "Contribute to all aspects of the software development life cycle, from requirements gathering and design to implementation, testing, and deployment",
+                    "Participate in code reviews, knowledge sharing, and continuous learning to stay up-to-date with emerging trends and technologies in cloud development and startup culture",
+                    "Startups I have worked with:",
+                    "Geekster.dk: I worked with React, Typescript, Material UI in the frontend, and NodeJS, Serverless Framework, AWS in the backend",
+                    "Husjournalen.com: Worked on deployment to production and domain setup, deepening my experience in React, Typescript, Material UI, NodeJS, Serverless Framework, and AWS",
+                    "Adept Time: I was involved since the beginning, working with new concepts like Mobile-First and Domain-driven design, as well as technologies such as NextJS and NestJS."
+                ],
+                "dateText": "09/2022 – Present"
+            },
+            {
+                "title": "Software Developer",
+                "subtitle": "I-dataBI | Software & Metrologia & Macrografia & Calibração & MSA",
+                "workType": "Part-time",
+                "workDescription": [
+                    "As a Software Developer at I-dataBI, I had the opportunity to work with a variety of technologies, but my primary focus was on developing software solutions using the PHP programming language, the Laravel framework, and the MySQL database.",
+                    "Working with PHP allowed me to build dynamic and robust web applications that were fast and efficient. The Laravel framework, with its elegant syntax and powerful features, enabled me to develop software solutions quickly and easily. Furthermore, by using the MySQL database, I was able to create reliable and scalable data-driven applications that met the needs of the companies we were working with.",
+                    "Over the course of my time at I-dataBI, I gained deep expertise in the PHP language, the Laravel framework, and the MySQL database, allowing me to design, build, and deploy complex software solutions with confidence. By leveraging these technologies, I was able to create software that was both powerful and user-friendly, that met the high standards of performance and quality that are required in the metrology industry.",
+                    "In short, my experience with the PHP language, the Laravel framework, and the MySQL database was essential to my success as a Software Developer at I-dataBI, and I am confident that these skills will continue to serve me well in my future endeavors."
+                ],
+                "dateText": "09/2019 – 09/2022"
+            },
+            {
+                "title": "Financial Consultant",
+                "subtitle": "Escola Superior do Ministério Público da União",
+                "workType": "Full-time",
+                "workDescription": [
+                    "My previous role as a Financial Consultant has greatly contributed to my current career as a software developer. Firstly, my experience has honed my analytical skills, enabling me to interpret complex tax regulations and financial data. This analytical mindset translates well into software development, where I can troubleshoot code, identify performance issues, and optimize solutions.",
+                    "Secondly, my attention to detail, crucial in tax compliance, serves me in software development. I strive for precision in writing clean code, conducting thorough testing, and ensuring accurate data processing.",
+                    "Moreover, my problem-solving abilities, developed through tackling tax-related challenges, empower me to find innovative solutions in software development. I can address complex technical issues, optimize processes, and deliver efficient solutions.",
+                    "Additionally, my understanding of compliance and regulation, vital in tax consulting, benefits software development. I can develop solutions that adhere to industry standards, data privacy laws, and security regulations.",
+                    "Furthermore, my client-focused approach from working directly with clients in tax consulting is valuable in software development. I understand client needs, collaborate closely with stakeholders, and deliver software solutions that meet expectations.",
+                    "Lastly, my communication and presentation skills, refined through explaining complex tax concepts, facilitate effective communication in software development. I can communicate clearly with team members, clients, and end-users.",
+                    "Leveraging my experience as a Financial Consultant, I bring a unique perspective to software development. My analytical thinking, attention to detail, problem-solving abilities, compliance knowledge, client-focused approach, and strong communication skills enable me to deliver high-quality software solutions that meet technical and business requirements. I ensure compliance with regulations and effectively address client needs."
+                ],
+                "dateText": "06/2016 – 08/2019"
+            },
+            {
+                "title": "General Contractor",
+                "subtitle": "Procuradoria Geral da República",
+                "workType": "Full-time",
+                "workDescription": [
+                    "I worked as a specialist in contracting services for the Brazilian Prosecutor's Office."
+                ],
+                "dateText": "09/2014 – 05/2016"
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Testimonials",
+        "testimonial1":{
+            "text": "Lucas is a fantastic person, very polite, hardworking and attentive to details. Always willing to learn, teach and work hard, he combines several skills that a great professional and competent teams need! I'm very happy to have participated in his trajectory and he in mine.",
+            "picture": ""
+        },
+        "testimonial2": {
+            "text":"I had the privilege of collaborating with Lucas, and right from the start, I was struck by his unwavering commitment to honesty, diligence, and professionalism. His meticulous approach to our discussions on tasks and potential solutions exemplified these values, making him one of the people that delivers enhanced value in the field of software development.",
+            "picture": ""
+        },
+        "testimonial3": {
+            "text": "I had a wonderful experience working with Lucas. He's always ready to help, learn, and delivering excellent quality. Any company would be lucky to have a professional like Lucas on their team.",
+            "picture": ""
+        },
+        "testimonial4": {
+            "text": "Lucas is next level when it comes to service and execution. He is has a lot of creative ideas for my projects; www.geekster.dk and www.quizedu.dk and he is never afraid of thinking in new and innovative ways. I have yet to see a thing that Lucas can't create and the last icing on the cake: he is a super nice guy to work with! Looking forward to develop a new project with him :)",
+            "picture": ""
+        }
+    }
+}

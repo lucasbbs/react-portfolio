@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Chrono } from 'react-chrono';
 import { Container } from 'react-bootstrap';
-import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import { ThemeContext } from 'styled-components';
 import { Helmet } from 'react-helmet';
@@ -10,20 +9,22 @@ import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/education.css';
 import ScrollButton from './ScrollTopButton';
+import { useLanguageContext } from '../TranslateContext';
 
-function Education(props) {
+function Education() {
   const theme = useContext(ThemeContext);
-  const { header } = props;
   const [data, setData] = useState(null);
   const [width, setWidth] = useState('50vw');
   const [mode, setMode] = useState('VERTICAL');
+
+  const { t, i18n } = useLanguageContext();
 
   useEffect(() => {
     fetch(endpoints.education, {
       method: 'GET',
     })
       .then((res) => res.json())
-      .then((res) => setData(res))
+      .then((res) => setData(res.education[i18n.language]))
       .catch((err) => err);
 
     if (window?.innerWidth < 576) {
@@ -39,18 +40,18 @@ function Education(props) {
     } else {
       setWidth('50vw');
     }
-  }, []);
+  }, [i18n]);
 
   return (
     <>
       <Helmet>
         <title>
-          Education | Lucas&apos; portfolio
+          {t('education.title') + ' | ' + t('home.name')}
         </title>
       </Helmet>
       <Header
         headerClassName="header"
-        title={header}
+        title={t('education.title')}
       />
       {data ? (
         <Fade>
@@ -60,7 +61,7 @@ function Education(props) {
                 hideControls
                 allowDynamicUpdate
                 useReadMore={false}
-                items={data.education}
+                items={data}
                 cardHeight={250}
                 mode={mode}
                 theme={{
@@ -72,7 +73,7 @@ function Education(props) {
                 }}
               >
                 <div className="chrono-icons">
-                  {data.education.map((education) => (education.icon ? (
+                  {data.map((education) => (education.icon ? (
                     <img
                       key={education.icon.src}
                       src={education.icon.src}
@@ -89,9 +90,5 @@ function Education(props) {
     </>
   );
 }
-
-Education.propTypes = {
-  header: PropTypes.string.isRequired,
-};
 
 export default Education;
