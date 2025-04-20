@@ -23,7 +23,7 @@
                 "link": false
             },
             {
-                "key": "Burthday",
+                "key": "Birthday",
                 "value": "November 7th, 1990",
                 "link": true,
                 "address": "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NHAya21zY3ZzcjlyZXY1ODA5ZG1vYWxmOGUgYWMxMzJjMDE2OTg0YWRiOGQ5ZTExOGE5NmRjODJmNjc4M2IwOGI4MzA5ZGFmMDYzMTMxNjA0OGI0NTBmMzgyMUBn&tmsrc=ac132c016984adb8d9e118a96dc82f6783b08b8309daf0631316048b450f3821%40group.calendar.google.com"
@@ -48,7 +48,7 @@
             },
             {
                 "key": "Specialty",
-                "value": "Full Stack CLoud Development",
+                "value": "Full Stack Cloud Development",
                 "link": false
             },
             {

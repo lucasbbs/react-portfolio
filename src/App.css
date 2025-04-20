@@ -121,6 +121,7 @@ section.timeline-card-content div.card-description > p {
 .social {
   position: relative;
   margin-top: 60px;
+  z-index: 1;
 }
 
 
